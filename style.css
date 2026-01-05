@@ -49,6 +49,8 @@ main{
     grid-template-columns: 1fr 1fr;
     margin: 3rem;
     border-radius: 0.5rem;
+    max-width: 635px;
+    max-height: 475px;
 }
 
 .info-section, .price-section, .why-us-section{
@@ -77,6 +79,7 @@ main{
     display: flex;
     flex-direction: column;
     background-color: var(--teal-500);
+    border-radius: 0 0 0 0.5rem;
 }
 
 .price{
@@ -96,6 +99,7 @@ button{
     font-family: Karla;
     color: white;
     font-weight: bold;
+    margin-top: 20px;
 }
 
 /*typography*/
@@ -118,14 +122,34 @@ button{
 
 .why-us-section{
     background-color: var(--teal-400);
+    border-radius: 0 0 0.5rem 0;
 }
 
 /*typography*/
 
 .why-us-section p{
     opacity: 0.75;
+    line-height: 1.5rem;
 }
 
+@media (max-width: 540px) {
+  body {
+    align-items: flex-start;
+  }
+  
+  main {
+    grid-template-columns: 1fr;
+    margin: 3rem 1rem;
+  }
+  
+  .price-section {
+    border-radius: 0;
+  }
+  
+  .why-us-section {
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+}
 
 
 
