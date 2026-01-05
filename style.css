@@ -17,7 +17,31 @@ body{
     margin: 0;
     background-color: var(--teal-100);
     font-family: Karla;
+    color: white;
 }
+
+/*typography*/
+h1{
+    color: var(--teal-400);
+    font-size: 1.5rem;
+}
+
+h2{
+    color: var(--green-400);
+    font-size: 1.125rem;
+}
+
+h3{
+   font-size: 1.25rem;
+   margin: 0;
+   margin-bottom: 1rem;
+}
+
+h4{
+    font-size: 2rem;
+}
+
+
 
 /*Layout*/
 main{
@@ -40,16 +64,25 @@ main{
     padding: 2.5rem;
 }
 
+/*typography*/
+
+.info-section p{
+    color: var(--gray-500);
+}
+
 
 /*price-section*/
 
 .price-section{
+    display: flex;
+    flex-direction: column;
     background-color: var(--teal-500);
 }
 
 .price{
     display: flex;
-    column-gap: 10px;
+    align-items: center;
+    column-gap: 0.5rem;
 }
 
 button{
@@ -59,11 +92,40 @@ button{
     padding: 0.5rem;
     width: 100%;
     height: 50px;
+    font-size: 1rem;
+    font-family: Karla;
+    color: white;
+    font-weight: bold;
 }
+
+/*typography*/
+
+.price p, .price h4, p{
+    margin: 0
+}
+
+.price p {
+    opacity: 0.5;
+}
+
+.price-info{
+    margin-bottom: auto;
+}
+
+
 
 /*why-us-section*/
 
 .why-us-section{
     background-color: var(--teal-400);
 }
+
+/*typography*/
+
+.why-us-section p{
+    opacity: 0.75;
+}
+
+
+
 
