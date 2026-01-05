@@ -1,6 +1,7 @@
 :root {
   /* Primary Colors */
   --teal-500: hsl(179, 62%, 43%);
+  --teal-400: hsl(179, 48%, 52%);
   --green-400: hsl(71, 73%, 54%);
   
   /* Neutral Colors */
@@ -14,4 +15,55 @@ body{
     align-items: center;
     height: 100vh;
     margin: 0;
+    background-color: var(--teal-100);
+    font-family: Karla;
 }
+
+/*Layout*/
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 3rem;
+    border-radius: 0.5rem;
+}
+
+.info-section, .price-section, .why-us-section{
+    padding: 2.5rem;
+}
+
+/*info-section*/
+
+.info-section{
+    grid-column: 1/ -1;
+    background-color: white;
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding: 2.5rem;
+}
+
+
+/*price-section*/
+
+.price-section{
+    background-color: var(--teal-500);
+}
+
+.price{
+    display: flex;
+    column-gap: 10px;
+}
+
+button{
+    background-color: var(--green-400);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    width: 100%;
+    height: 50px;
+}
+
+/*why-us-section*/
+
+.why-us-section{
+    background-color: var(--teal-400);
+}
+
