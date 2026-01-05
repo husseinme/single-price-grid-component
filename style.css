@@ -99,7 +99,7 @@ button{
     font-family: Karla;
     color: white;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 20;
 }
 
 /*typography*/
@@ -127,14 +127,14 @@ button{
 
 /*typography*/
 
-.why-us-section p{
-    opacity: 0.75;
-}
-
 ul{
+    opacity: 0.75;
     list-style: none;
     line-height: 1.5rem;
     padding: 0;
+    margin: 0;
+    font-size: 0.875rem;
+    max-height: 140p;
 }
 
 /*responsiveness*/
