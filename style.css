@@ -7,3 +7,11 @@
   --teal-100: hsl(204, 43%, 93%);
   --gray-500: hsl(218, 22%, 67%);
 }
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
